@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
+main{
+	max-width:700px;
+	min-width: 200px;
+	min-width:10%;
+	margin:10px auto 60px auto;
+	text-align: center;
+}
+
+label{
+	cursor:pointer;
+}
+
+h1{
+	text-align:center;
+}
+
+html{
+	font-family: Roboto;
+	color: white;
+	background: black;
+}
+
+input{
+	display: none;
+}
+
+a{
+	margin-top:10px;
+	margin-bottom:10px;
+	font-size: 36px;
+	display: block;
+	color: white;
+	text-decoration: none;
+	text-align:center;
+}
+
+a:hover{
+	color: red;
+}
+
+#pylogo{
+	margin-top:20px;
+	width: 20%;
+	height: 30%;
+	top: 10%;
+}
+
+.chere{
+	text-align: center;
+	font-size: 36px;
+	font-weight: 100px;
+	transition: all .6s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+#ch2:checked ~ .chere{
+	display: none;
+	opacity: 0;
+	transition: all .6s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+.pyRef{
+	font-size: 64px;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    opacity: 0;
+	background-size: 0% 2px;
+
+	transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+#ch2:checked ~ .pyRef{
+	top: 45%;
+	opacity: 1;
+	background-size: 75% 2px;
+}
+.refDesc{
+	font-size: 30px;
+	font-weight: 100px;
+	opacity: 0;
+	text-align: center;
+	transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+#ch2:checked ~ .refDesc{
+	opacity: 1;
+}
+.history{
+	margin-top:30px;
+	margin-bottom:15px;
+	opacity: 0;
+	display:none;
+	text-align: center;
+	font-size: 48px;
+	font-weight: 30;
+}
+#ch2:checked ~ .history{
+	opacity: 1;
+	display: block;
+}
+.historyDesc{
+	opacity: 0;
+	font-size: 24px;
+	font-weight: 100px;
+	display: flex;
+	display: none;
+	transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+#ch2:checked ~ .historyDesc{
+	display: flex;
+}
+.history:hover ~ .historyDesc{
+	display: flex;
+	opacity: 1;
+}
+.pers{
+	margin-top:30px;
+	margin-bottom:15px;
+	font-size: 48px;
+	font-weight: 100px;
+	display: none;
+}
+
+#ch2:checked ~ .pers{
+	display: block;
+}
+.persDesc{
+	opacity: 0;
+	font-size: 24px;
+	font-weight: 30;
+	display: flex;
+	text-align: center;
+	display: none;
+	transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+#ch2:checked ~ .persDesc{
+	display: block;
+}
+.pers:hover ~ .persDesc{
+	display: block;
+	opacity: 1;
+}
+.chere1{
+	display:none;
+	margin-top:40px;
+	margin-bottom:15px;
+	font-size: 36px;
+	transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+
+#ch2:checked ~ .chere1{
+	display: block;
+	opacity:1;
+}
+
+#ch:checked ~ .chere1{
+	display:none;
+}
+
+.Refer{ 	
+	font-size: 64px;
+	text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    background-size: 0% 2px;
+	transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+#ch:checked ~ .Refer{
+	opacity: 1;
+	background-size: 75% 2px;
+}
+#adviceBook{
+	margin-top:50px;
+	margin-bottom:15px;
+	opacity: 0;
+	font-size: 36px;
+	transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+#ch:checked ~ #adviceBook{
+	opacity: 1;
+}
+.byte{
+	margin-top:30px;
+	margin-bottom:15px;
+	opacity: 0;
+	font-size: 24px;
+	text-align: center;
+}
+#ch:checked ~ .byte{
+	opacity: 1;
+}
+#download1{
+	opacity: 0;
+}
+#ch:checked ~ #download1{
+	position:relative;
+	opacity: 1;
+}
+.grok{
+	margin-top:30px;
+	margin-bottom:15px;
+	opacity: 0;
+	font-size: 24px;
+	text-align: center;
+}
+#ch:checked ~ .grok{
+	opacity: 1;
+}
+#download2{
+	
+	text-align:center;
+	opacity: 0;
+}
+#ch:checked ~ #download2{
+	opacity: 1;
+}
+#adviceVideo{
+	margin-top:80px;
+	margin-bottom:-20px;
+	opacity: 0;
+	font-size: 36px;
+	transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+#ch:checked ~ #adviceVideo{
+	opacity: 1;
+}
+.ghub{
+	margin-top:10px;
+	margin-bottom:10px;
+	opacity: 0;
+	font-size: 24px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+#ch:checked ~ .ghub{
+	opacity: 1;
+}
+#refl1{
+	opacity: 0;
+}
+#ch:checked ~ #refl1{
+	opacity: 1;
+}
+.pypi{
+	opacity: 0;
+	font-size: 24px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+#ch:checked ~ .pypi{
+	opacity: 1;
+}
+#refl2{
+	opacity: 0;
+}
+#ch:checked ~ #refl2{
+	opacity: 1;
+}
+#ghubl{
+	margin-top:50px;
+	margin-bottom:10px;
+	opacity: 0;
+	width: 100px;
+	height: 100px;
+}
+#pypil{
+	margin-top:50px;
+	margin-bottom:10px;
+	opacity: 0;
+	width: 100px;
+	height: 100px;
+}
+#ch:checked ~ #ghubl{
+	opacity: 1;
+
+}
+#ch:checked ~ #pypil{
+	opacity: 1;
+}
